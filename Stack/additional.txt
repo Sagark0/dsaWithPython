@@ -1,0 +1,7 @@
+Stack:
+1) Balanced Paranthesis
+2) Infix, Postfix, Prefix
+
+Stock Span Problem:
+Similar to nextGreaterElement just reverse the iteration
+
