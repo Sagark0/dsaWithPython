@@ -1,6 +1,3 @@
-from itertools import count
-from this import d
-from turtle import right
 import tree
 Node=tree.Node
 root=Node(1)

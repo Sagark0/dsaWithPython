@@ -3,15 +3,22 @@ class Node:
         self.val=val
         self.left=None
         self.right=None
-root=Node(1)
-root.left=Node(2)
-root.right=Node(3)
-root.left.left=Node(4)
-root.left.right=Node(5)
-root.left.right.left=Node(6)
-root.left.right.right=Node(7)
-root.right.left=Node(8)
-
+# root=Node(1)
+# root.left=Node(2)
+# root.right=Node(3)
+# root.left.left=Node(4)
+# root.left.right=Node(5)
+# root.left.right.left=Node(6)
+# root.left.right.right=Node(7)
+# root.right.left=Node(8)
+root = Node(10)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(7)
+root.left.right = Node(8)
+root.right.right = Node(15)
+root.right.left = Node(12)
+root.right.right.left = Node(14)  
 
 def preOrder(root):
     if(root is not None):
@@ -45,3 +52,14 @@ def level(root,parent):
         level(root.left,currLevel)
         level(root.right,currLevel)
 
+def leftView(root,level,maxLevel):
+    if root is None:
+        return
+    if(level>maxLevel[0]):
+        print(root.val)
+        maxLevel[0]=level
+    leftView(root.left,level+1,maxLevel)
+    leftView(root.right,level+1,maxLevel)
+
+maxLevel=[0]
+leftView(root,1,maxLevel)
