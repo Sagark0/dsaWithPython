@@ -3,8 +3,8 @@ from operator import ne
 class Graph:
     def __init__(self,n):
         self.adj=[]
-        edges=[]
         for i in range(n):
+            edges=[]    
             self.adj.append(edges)
     def addEdge(self,u,v):
         self.adj[u].append(v)
@@ -19,7 +19,7 @@ graph.addEdge(0,2)
 graph.addEdge(2,3)
 # graph.addEdge(3,4)
 graph.addEdge(0,4)
-
+print(graph.getNeigh(1))
 def bfs(source):
     q=deque()
     visited={}
