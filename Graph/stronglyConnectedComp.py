@@ -1,3 +1,6 @@
+# Strongly Connected Components are group of those components in which we can reach from every single node to every other node
+
+
 class Graph:
     def __init__(self,n):
         self.arr=[]
