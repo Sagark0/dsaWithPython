@@ -1,9 +1,8 @@
 from collections import deque
-from tkinter.tix import Tree
 arr=[
     ['F','F','F','F'],
     ['F','C','F','C'],
-    ['F','C','F','C'],
+    ['F','C','C','C'],
     ['F','F','F','F']
 ]
 def bfs(grid,x,y,visited,distance,maxm):

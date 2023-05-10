@@ -1,8 +1,6 @@
-from collections import deque
-
 
 a=[1,2,3,1,4,5,2,3,1,6]
-k=3
+k=2
 # res=[3,3,4,5,5,5,1,6]
 from collections import deque
 def func(a,k):

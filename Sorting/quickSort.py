@@ -1,5 +1,7 @@
-a=[2,10,6,8,3,4]
-
+a=[2,10,6,8,4,3,5]
+# In partition function we choose a pivot and place to correct position
+# elements smaller than pivot will be on left side of pivot
+# elements larger than pivot will be on right side of pivot
 def partition(a,start,end):
     left=start-1
     pivot=end
@@ -17,3 +19,5 @@ def quickSort(a,start,end):
     return a
 
 print(quickSort(a,0,len(a)-1))
+
+# Average Complexity O(nlogn), Worst O(n^2)

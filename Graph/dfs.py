@@ -25,7 +25,7 @@ def dfs(source,visited):
         visited[source]=True
         print(source)  
         for neigh in graph.getNeigh(source):
-            if(neigh not in visited):
+            # if(neigh not in visited):
                 dfs(neigh,visited)
 
 dfs(0,visited)

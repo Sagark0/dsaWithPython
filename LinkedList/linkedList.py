@@ -1,6 +1,3 @@
-from requests import delete, head
-
-
 class Node:
     def __init__(self,data):
         self.data=data
@@ -11,7 +8,7 @@ class LinkedList:
         self.head=None
     def addAtFront(self,data):
         node=Node(data)
-        node.next   =self.head
+        node.next=self.head
         self.head=node
     def printList(self):
         curr=self.head

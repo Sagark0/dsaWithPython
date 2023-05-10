@@ -2,10 +2,11 @@ from collections import deque
 from operator import ne
 class Graph:
     def __init__(self,n):
-        self.adj=[]
-        for i in range(n):
-            edges=[]    
-            self.adj.append(edges)
+        self.adj=[[] for _ in range(n)]
+        # self.adj=[]
+        # for i in range(n):
+        #     edges=[]    
+        #     self.adj.append(edges)
     def addEdge(self,u,v):
         self.adj[u].append(v)
         self.adj[v].append(u)

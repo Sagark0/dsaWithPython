@@ -9,6 +9,7 @@ def generate(k):
         print(el)
         q.append(el+'0')
         q.append(el+'1')
+        # print(q)
         cnt+=1
 generate(10)
 

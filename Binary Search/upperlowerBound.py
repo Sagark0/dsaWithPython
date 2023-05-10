@@ -1,6 +1,3 @@
-from matplotlib.pyplot import legend
-
-
 a=[10,20,60,60,60,60,70,100,130]
 k=60
 def lowerBound(a,k,start,end,ans):
