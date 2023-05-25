@@ -44,14 +44,14 @@ def height(root):
         left=height(root.left)
         right=height(root.right)
         return max(left,right)+1
-# print(height(root))
+print(height(root))
 def level(root,parent):
     if(root is not None):
         currLevel=parent+1
         print("Level of "+ str(root.val)+" is "+ str(currLevel))
         level(root.left,currLevel)
         level(root.right,currLevel)
-print(level(root,0))
+# print(level(root,0))
 def leftView(root,level,maxLevel):
     if root is None:
         return

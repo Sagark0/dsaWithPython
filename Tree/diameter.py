@@ -32,3 +32,7 @@ def diameter(root):
     else:
         return 0
 print(diameter(root))
+
+# T.C O(n^2) S.C O(n)
+
+# T.C O(n) is also possible. How?
